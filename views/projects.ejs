@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<section id="portfolio">
+    <h2 class="heading">Portfolio</h2>
+    <div class="projects-div">
+        <% projects.forEach(project => { %>
+            <div class="project">
+                <img src="<%= project.image %>" alt="<%= project.alt %>" />
+                <h2><%= project.title %></h2>
+                <p><%= project.description %></p>
+                <a href="<%= project.link %>" title="More details" target="_blank" rel="noopener noreferrer">Details</a>
+            </div>
+        <% }); %>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<!-- About Section -->
+<section id="about">
+    <div id="about-profile">
+        <img id="profile-img" src="/Assets/profile.jpg" alt="profile picture of Tin Aung Oo" />
+    </div>
+    <div id="about-content">
+        <h2>Hi, My Name Is <span>Tin Aung Oo</span></h2>
+        <p>
+            I'm passionate about creating web and game development projects. I am constantly learning and improving my skills to achieve a successful career in technology.
+        </p>
+        <nav id="external-links" aria-label="External links">
+            <a href="https://Facebook.com" title="Visit my Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://github.com" title="Visit my GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://discord.com" title="Visit my Discord" target="_blank" rel="noopener noreferrer">Discord</a>
+        </nav>
+    </div>
+</section>
+<hr />
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+        <% skills.forEach(skill => { %>
+            <li><%= skill %></li>
+        <% }); %>
+    </ul>
+</section>
+
+<%- include('partials/footer') %>
