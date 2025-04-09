@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tin Aung Oo's portfolio showcasing about,skills, portfolio, and contact information." />
+    <title>Tin Aung Oo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <h1>Tin Aung Oo</h1>
+      <nav id="navbar" aria-label="Main navigation">
+        </li><a href="#about" tabindex="1">About</a>
+        <a href="#skills" tabindex="2">Skills</a>
+        <a href="#portfolio" tabindex="3">Portfolio</a>
+        <a href="#contact" tabindex="4">Contact</a>
+      </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div id="about-profile">
+        <img id="profile-img" src="Assets/profile.jpg" alt="profile picture of Tin Aung Oo" />
+      </div>
+      <div id="about-content">
+        <h2>Hi, My Name Is <span>Tin Aung Oo</span></h2>
+        <p>
+            I'm passionate about creating web and game development projects. I am constantly learning and improving my skills to achieve a successful career in technology.
+
+        </p>
+        <nav id="external-links" aria-label="External links">
+          <a href="https://Facebook.com" title="Visit my Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://github.com" title="Visit my GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.com" title="Visit my Discord" target="_blank" rel="noopener noreferrer">Discord</a>
+        </nav>
+      </div>
+    </section>
+    <hr />
+
+        <!-- Skills Section -->
+        <section id="skills">
+          <h2 class="heading">Skills</h2>
+          <ul>
+              <li>HTML, CSS, and JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Python Programming</li>
+              <li>Accessibility and ARIA Implementation</li>
+              <li>Unreal Engine</li>
+              <li>Unity</li>
+          </ul>
+      </section>
+      <hr>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2 class="heading">Portfolio</h2>
+      <div class="projects-div">
+        <!-- Example Projects -->
+        <div class="project">
+          <img src="Assets/1.png" alt="Color Picker Project" />
+          <h2>Project 1 - Color Picker</h2>
+          <p>A simple and interactive color picker tool that allows users to select a color and see the result in multiple formats (hexadecimal, RGB, and HSL).</p>
+          <a href="https://github.com/Eddy-Oo/ColorPicker" title="More details" target="_blank" rel="noopener noreferrer">Details</a>
+        </div>
+    
+        <div class="project">
+          <img src="Assets/2.png" alt="League Of Legends Searcher" />
+          <h2>Project 2 - Champion_Search</h2>
+          <p>The Champion search tool helps users find information about champions in League of Legends.</p>
+          <a href="https://github.com/Eddy-Oo/LOL-Champion-Search-" title="For more details" target="_blank" rel="noopener noreferrer">Details</a>
+        </div>
+            </section>
+    <hr />
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="heading">Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" aria-required="true" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" aria-required="true"></textarea>
+
+        <button type="submit" aria-label="Submit button">Submit</button>
+      </form>
+      <p id="responseMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Tin Aung Oo</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
